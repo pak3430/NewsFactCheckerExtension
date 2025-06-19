@@ -1,0 +1,44 @@
+{
+    "manifest_version": 3,
+    "name": "뉴스 팩트 체커",
+    "version": "1.0",
+    "description": "Google Gemini API 기반으로 뉴스의 사실을 검증하고 비교합니다.",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage",
+        "webRequest"
+    ],
+    "host_permissions": [
+        "<all_urls>",
+        "https://generativelanguage.googleapis.com/*"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/icon16.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+        }
+    },
+    "options_page": "options.html",
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["lib/Readability.js", "content.js"]
+        }
+    ],
+    "web_accessible_resources": [{
+        "resources": ["lib/Readability.js"],
+        "matches": ["<all_urls>"]
+    }],
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    }
+}
