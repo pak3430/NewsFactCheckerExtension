@@ -5,11 +5,13 @@
 ## 주요 기능
 
 ### 1. 뉴스 내용 자동 추출
-- 26개 주요 뉴스 사이트 지원 (한국 14개, 해외 12개)
+
+- 26개 주요 뉴스 사이트 지원 (한국 14개, 해외 13개)
 - Mozilla의 Readability.js를 활용한 신뢰성 있는 콘텐츠 추출
 - 메타데이터(제목, 작성자, 날짜, 키워드 등) 자동 추출
 
 ### 2. RAG 기반 팩트 체크
+
 - Google Gemini API를 활용한 고성능 분석
 - 사실 관계 검증
 - 객관성 평가
@@ -18,11 +20,13 @@
 - 편향성 분석
 
 ### 3. 스마트 캐싱
+
 - 24시간 유효한 분석 결과 캐싱
 - 동일 기사 재분석 방지
 - 빠른 결과 제공
 
 ### 4. 히스토리 관리
+
 - 최근 100개 분석 결과 저장
 - 분석 결과 히스토리 조회
 - 원문 기사 바로가기
@@ -31,6 +35,7 @@
 ## 지원하는 뉴스 사이트
 
 ### 한국 언론사
+
 1. 네이버 뉴스 (news.naver.com)
 2. 다음 뉴스 (news.daum.net)
 3. 중앙일보 (joins.com)
@@ -47,6 +52,7 @@
 14. KBS (kbs.co.kr)
 
 ### 해외 언론사
+
 1. The New York Times (nytimes.com)
 2. The Wall Street Journal (wsj.com)
 3. Reuters (reuters.com)
@@ -64,6 +70,7 @@
 ## 설치 방법
 
 1. 이 저장소를 클론하거나 다운로드합니다.
+
 ```bash
 git clone [repository-url]
 ```
@@ -91,6 +98,7 @@ git clone [repository-url]
 2. "뉴스 검증 시작" 버튼을 클릭합니다.
 
 3. 분석 결과에서 다음 정보를 확인할 수 있습니다:
+
    - 사실 여부
    - 신뢰도 점수
    - 객관성 평가
@@ -143,7 +151,7 @@ NewsFactCheckerExtension/
 
 ## 작성자
 
-[Your Name]
+Sang Hoon Park
 
 ## 감사의 글
 
